@@ -1,0 +1,39 @@
+body{
+    background-size: cover;
+}
+
+#start_button, #objects_detected, #status{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+canvas{
+    box-shadow: 2px 2px 2px blue;
+    margin-top: 130px;
+    margin-bottom: 50px;
+    animation-name: canvas_border;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes canvas_border{
+    from{border: 5px solid blue;}
+    to{border: 5px solid yellow;}
+}
+
+.footer_div{
+    width: 100%;
+    position: fixed;
+    line-height: 40px;
+    bottom: 0;
+    background-color: lightsalmon;
+    animation-name: footer_color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes footer_color{
+    from{color: blue;}
+    to{color:red;}
+}
